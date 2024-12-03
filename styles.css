@@ -1,0 +1,198 @@
+/* Estilo base */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .menu li a:hover {
+    color: #f0a500;
+}
+
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.home-section img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.home-content {
+    max-width: 50%;
+}
+
+.home-content .btn-primary {
+    background-color: #f0a500;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.home-content .btn-primary:hover {
+    background-color: #d18f00;
+}
+
+.autos-section {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.auto-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.reseñas-section {
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.reseña-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.contacto-section {
+    padding: 40px;
+    background-color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea,
+form button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #444;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+}
+
+/* Media Queries */
+
+/* Pantallas medianas (tabletas, 768px a 1024px) */
+@media (max-width: 1024px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-section img,
+    .home-content {
+        max-width: 100%;
+    }
+
+    .auto-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Pantallas pequeñas (móviles, menor a 768px) */
+@media (max-width: 768px) {
+    header .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav {
+        text-align: center;
+    }
+
+    .home-section {
+        padding: 20px;
+    }
+
+    .home-section img {
+        display: none;
+        /* Oculta la imagen en pantallas pequeñas */
+    }
+
+    .auto-cards {
+        gap: 10px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .reseña-grid {
+        grid-template-columns: 1fr;
+    }
+}

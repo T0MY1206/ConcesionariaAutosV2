@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Concesionaria AutoDrive: Encuentra el auto de tus sueños con los mejores precios y calidad garantizada.">
+    <meta name="keywords" content="autos, concesionaria, SUV, deportivos, compactos, ventas de autos">
+    <meta name="author" content="Concesionaria AutoDrive">
+    <title>Concesionaria AutoDrive</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>AutoDrive</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#autos">Autos</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home-section">
+            <div class="home-content">
+                <h2>Bienvenido a AutoDrive</h2>
+                <p>Encuentra el auto de tus sueños con la mejor calidad y el mejor precio.</p>
+                <a href="#autos" class="btn-primary">Ver Autos</a>
+            </div>
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d" alt="AutoDrive principal">
+        </section>
+
+        <section id="autos" class="autos-section">
+            <h2>Nuestros Autos</h2>
+            <div class="auto-cards">
+                <div class="card">
+                    <img src="SUV_FAMILY.webp" alt="SUV Familiar">
+                    <h3>SUV Familiar</h3>
+                    <p>Comodidad y espacio para toda la familia. Ideal para viajes largos.</p>
+                </div>
+                <div class="card">
+                    <img src="DEPORTIVO_ELEGANT.webp" alt="Deportivo Elegante">
+                    <h3>Deportivo Elegante</h3>
+                    <p>Potencia y diseño. Perfecto para quienes aman la velocidad.</p>
+                </div>
+                <div class="card">
+                    <img src="COMPACTO_URBAN.webp" alt="Compacto Urbano">
+                    <h3>Compacto Urbano</h3>
+                    <p>Eficiente y manejable, ideal para la ciudad.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reseñas" class="reseñas-section">
+            <h2>Reseñas de Clientes</h2>
+            <div class="reseña-grid">
+                <div class="reseña">
+                    <p>"Excelente servicio y variedad de autos. 100% recomendado."</p>
+                    <span>- Cliente 1</span>
+                </div>
+                <div class="reseña">
+                    <p>"El SUV que compré es perfecto para mis viajes familiares."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="reseña">
+                    <p>"Atención al cliente impecable y autos en excelente estado."</p>
+                    <span>- Cliente 3</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto-section">
+            <h2>Contáctanos</h2>
+            <form id="contact-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Concesionaria AutoDrive. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
